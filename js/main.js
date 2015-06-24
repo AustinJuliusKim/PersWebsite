@@ -30,3 +30,27 @@ var clear = window.setInterval(function(){
 	}
 }, 1500);
 
+( function($){
+	// Init Skrollr
+	var s = skrollr.init({
+		render: function(data){
+			// console.log(data.curTop);
+		}
+	});
+})(jQuery);
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, "slow");
+        return false;
+      };
+    };
+  });
+});
+
