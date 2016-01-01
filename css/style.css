@@ -47,6 +47,7 @@ body {
 nav {
     font-family: 'Pacifico', cursive;
 }
+
 .link {
     font-size: 24px;
     color: black;
@@ -61,12 +62,6 @@ li > .link:hover{
     margin: 0 auto;
 }
 
-/*.bcg {
-    background: url('../img/basketball.jpg') no-repeat 50%;
-    height: 1000px;
-    margin: 0 auto;
-}*/
-/* FIXED TITLE STYLING*/
 .title {
     height: 500px;
     max-width: 100%;
@@ -74,9 +69,7 @@ li > .link:hover{
     text-align: center;
     z-index: -1;
     right: 15%;
-    display: inline;
-    /*border: 1px solid red;*/
-    /*font-family: 'Pacifico', cursive;*/
+    display: inline;d
 }
 
 .title h1 {
